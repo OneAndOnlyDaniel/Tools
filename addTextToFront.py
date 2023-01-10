@@ -9,7 +9,9 @@ if(len(sys.argv) > 1):
 	stri = sys.argv[1]
 	if(len(sys.argv) > 2):
 		filt = sys.argv[2]
+
 	path = os.getcwd()
+	
 	for root, directories, file in os.walk(path):
 		for file in file:
 			if(file.endswith(filt)):
